@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*limited reset*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align:baseline;
+	font: inherit;
+}
+
+
+/*Basic layout styles ----------------------*/
+
+body {
+	margin: 0 auto;
+	background: #fff;
+	font: 100% "proxima-nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.75em;
+	position: relative;
+	color: #636466;
+	font-weight: normal;
+	font-style: normal;
+  font-size: 0.95em;
+  text-align: center;
+	box-sizing: border-box;
+}
+.width-mid {
+		padding: 10px;
+}
+	
+
+
+/*Navigation ----------------------*/
+
+.main-nav {
+	list-style:none;
+    margin:0;
+    padding:0;
+	position: relative;
+
+}
+.main-nav li{
+    display:inline;
+}
+
+.main-nav a{
+    display:inline-block;
+    margin:2%;
+	font-size: 0.75em;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+	position: relative;
+	text-decoration: none;
+}
+a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/*Typography ----------------------*/
+
+h1 {
+  font-size: 1.25em;
+  margin: 5% 0% 5% 0;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+h2 {
+  font-size: 1.15em;
+  margin: 35px 0px 10px 0px;
+}
+.white-txt {    
+  color: #ffffff;
+}
+
+p {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.lined {
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+  border-spacing: 10px 0px 50px 0px;
+  padding: 5% 0 5% 0;
+  border-color: #E1E1E1;
+}
+em {
+  font-style: italic;
+}
+
+/*Header */
+
+header {
+  width: 100%;
+  max-height: 600px;
+  margin: 0 0 5% 0;
+  background-image: url("http://nicolabradystudio.com/wp-content/uploads/2016/09/Bold-Peak-Lodge_Hero_img.png");
+  background-size: cover;
+  color: #fff;
+}
+
+
+/*Content sections ----------------------*/
+
+address {
+    margin-bottom: 50px;
+}
+
+section {
+	max-width: 90%;
+	margin: 0 auto;
+}
+.one {
+  background-color: #e1e1e1;
+  padding: 10px;
+  float:left; 
+  width:45%;
+  height:400px;
+}
+.two { 
+  background-color: #e1e1e1;
+  padding: 10px;
+  overflow:hidden;
+  height:400px;
+  background-image: url(bkgrd-images/Bold-Peak-Lodge_Mug3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.three {
+  background-color: #e1e1e1;
+  padding: 10px;
+  float:left; 
+  width:45%;
+  height:400px;
+  background-image: url(bkgrd-images/Bold-Peak-Lodge_coffee.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.four { 
+  background-color: #e1e1e1;
+  padding: 10px;
+  overflow: hidden;
+  height:400px;
+}
+.bar-color{
+	background-color: #583033;
+}
+.bar-description {
+	background-color: #583033;
+}
+.cafe-description {
+	background-color: #7b753b;
+}
+#footer {
+  background-color: #343d32;
+  padding: 20px;
+}
+
+
+
+/* Media Queries for content sections & Nav --------- */
+@media screen and (max-width: 768px) {
+	section {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.main-nav {
+  list-style:none;
+    margin:0;
+    padding:0;
+  position: relative;
+
+}
+.main-nav li{
+    display:block;
+}
+
+.main-nav a{
+    display:inline-block;
+    margin:2%;
+  font-size: 0.75em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  position: relative;
+  text-decoration: none;
+}
+   .one { 
+    float: none;
+    margin-right:0;
+    width: 100%;
+    border:0;
+    padding: 0px;
+  }
+   .two { 
+    padding: 0px;
+  } 
+   .three { 
+    float: none;
+    margin-right:0;
+    width: 100%;
+    border:0;
+    padding: 0px;
+  }
+   .four { 
+    width: 100%;
+    padding: 0px;
+  } 
+  .sml {
+	width: 40px;
+}
+
+
+
+}
+
+
+
+/* Google map--------- */
+
+    .google-map {
+        position: relative;
+        height: 400px;
+        width: 90%;
+        overflow: hidden;
+        margin: 0 auto 0 auto;
+    }
+    .google-map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        max-height: 400px !important;
+        display: block;
+    }
+    .overlay {
+        background: rgba(39,62,84,0.82);
+        overflow: hidden;
+        height: 100%;
+        z-index: 2;
+    }
+
+
+
+/*Logos & Images ----------------------*/
+.logo-lrg {
+	padding: 8% 0 10% 0;
+	max-width: 200px;
+}
+.logo-sml {
+	padding: 50px 0 10px 0;
+	width: 150px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+
